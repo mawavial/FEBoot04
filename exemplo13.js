@@ -7,4 +7,6 @@ async function executar() {
   }
 }
 
-executar();
+const resultadoFinal = await executar();
+
+console.log(resultadoFinal);
