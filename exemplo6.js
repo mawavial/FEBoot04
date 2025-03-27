@@ -10,8 +10,8 @@ function exemploLetConst() {
       let y = 'Escopo de bloco';
       const z = 'Também escopo de bloco';
   }
-  // console.log(y); // Erro!
-  // console.log(z); // Erro!
+  console.log(y); // Erro!
+  console.log(z); // Erro!
 }
 
 exemploVar();

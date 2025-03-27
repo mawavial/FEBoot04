@@ -1,6 +1,6 @@
 'use strict';
 function correto() {
-    bemDeclarada = 'Agora sim';
+    let bemDeclarada = 'Agora sim';
     console.log(bemDeclarada);
 }
 

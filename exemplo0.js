@@ -9,4 +9,4 @@ function pai() {
 }
 
 const minhaFuncao = pai(); // "pai" é executada, mas "filho" ainda existe
-minhaFuncao(); // "Olá, mundo!"
+minhaFuncao; // "Olá, mundo!"

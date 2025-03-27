@@ -1,7 +1,7 @@
-function minhaFuncao() {
-  let v1 = 'Sou local';
+let v1 = 'Sou local';
+(function minhaFuncao() {
+  
   console.log(v1); // Funciona
-}
+})()
 
-minhaFuncao();
-// console.log(v1); // Erro! v1 não está definida no escopo global
+console.log(v1); // Erro! v1 não está definida no escopo global

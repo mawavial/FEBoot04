@@ -14,7 +14,7 @@ function fetchPagamentos() {
   return new Promise(resolve => setTimeout(() => resolve({ pagamentos: ['Cartão', 'Boleto'] }), 2500));
 }
 
-Promise.all([fetchUsuarios(), fetchPedidos(), fetchProdutos(), fetchPagamentos()])
+const result = await  Promise.all([fetchUsuarios(), fetchPedidos(), fetchProdutos(), fetchPagamentos()])
   .then(([usuarios, pedidos, produtos, pagamentos]) => {
       console.log('Usuários:', usuarios);
       console.log('Pedidos:', pedidos);
@@ -22,3 +22,6 @@ Promise.all([fetchUsuarios(), fetchPedidos(), fetchProdutos(), fetchPagamentos()
       console.log('Pagamentos:', pagamentos);
   })
   .catch(err => console.error('Erro em alguma promise:', err));
+
+
+  console.log(result);
