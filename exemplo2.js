@@ -1,7 +1,20 @@
-let v1 = 'Sou local';
-(function minhaFuncao() {
-  
-  console.log(v1); // Funciona
-})()
-
-console.log(v1); // Erro! v1 não está definida no escopo global
+function getUser(callback) { 
+  setTimeout(() => { 
+    console.log("Usuário carregado"); 
+    callback({ id: 1, name: "Thiago" }); 
+  }, 2000); 
+} 
+ 
+function getPosts(userId, callback) { 
+  setTimeout(() => { 
+    console.log("Posts carregados"); 
+    callback(["Post 1", "Post 2"]); 
+  }, 2000); 
+} 
+ 
+getUser((user) => { 
+  console.log("Usuário:", user.name); 
+  getPosts(user.id, (posts) => { 
+    console.log("Posts:", posts); 
+  }); 
+}); 

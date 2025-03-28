@@ -1,6 +1,7 @@
-let v2 = 'Sou global';
-function outraFuncao() {
-    console.log(v2); // Funciona porque v2 é global
-}
-console.log(v2);
-outraFuncao();
+const fetchPromise = fetch("https://pokeapi.co/api/v2/pokemon/pikachu"); 
+ 
+fetchPromise.then((response) => { 
+  console.log("Resposta recebida:", response.status); 
+}); 
+ 
+console.log("Requisição iniciada…")
