@@ -1,11 +1,12 @@
-async function fetchPokemon() { 
-  try { 
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu"); 
-    const data = await response.json(); 
-    console.log("Nome do Pokémon:", data.name); 
-  } catch (error) { 
-    console.error("Erro ao buscar Pokémon", error); 
-  } 
-} 
- 
-fetchPokemon(); 
+class Cachorro extends Animal {
+  constructor(nome, raca) {
+      super(nome, "Cachorro");
+      this.raca = raca;
+  }
+  emitirSom() {
+      console.log("Au au!");
+  }
+}
+const dog = new Cachorro("Max", "Labrador");
+console.log(dog.raca); // Labrador
+dog.emitirSom(); // Au au!

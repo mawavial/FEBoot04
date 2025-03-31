@@ -1,11 +1,8 @@
-const fetchPromise = fetch("https://pokeapi.co/api/v2/pokemon/pikachu"); 
- 
-fetchPromise.then((response) => { 
-  console.log("Resposta recebida:", response); 
-}); 
- 
-console.log("Requisição iniciada…")
+carro = { marca: "Toyota", modelo: "Corolla" };
+carro.modelo = "Hilux"; // Permitido
 
-//pending
-//fulfilled/resolved
-//rejected
+console.log(carro)
+//nops
+carro = null; // Erro!
+
+console.log(carro)
