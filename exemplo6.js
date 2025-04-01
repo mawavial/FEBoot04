@@ -1,12 +1,7 @@
-class Cachorro extends Animal {
-  constructor(nome, raca) {
-      super(nome, "Cachorro");
-      this.raca = raca;
-  }
-  emitirSom() {
-      console.log("Au au!");
-  }
+function apresentar(profissao, idade) {
+  console.log(`Meu nome é ${this.nome}, sou ${profissao} e tenho ${idade} anos`);
 }
-const dog = new Cachorro("Max", "Labrador");
-console.log(dog.raca); // Labrador
-dog.emitirSom(); // Au au!
+
+const pessoa = { nome: "Carlos" };
+
+apresentar.apply(pessoa, ["médico", 40]); // Meu nome é Carlos, sou médico e tenho 40 anos

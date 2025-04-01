@@ -1,6 +1,4 @@
+const pessoa = { nome: "Carlos" };
 
-const pessoa = {
-  nome: "Ana",
-  idade: 25,
-  profissao: "Desenvolvedora"
-};
+console.log(pessoa.toString()); // [object Object]
+console.log(pessoa.hasOwnProperty("nome")); // true

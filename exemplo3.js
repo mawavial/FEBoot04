@@ -1,8 +1,5 @@
-carro = { marca: "Toyota", modelo: "Corolla" };
-carro.modelo = "Hilux"; // Permitido
+Array.prototype.first = function() {
+  return this[0];
+};
 
-console.log(carro)
-//nops
-carro = null; // Erro!
-
-console.log(carro)
+console.log([10, 20, 30].first()); // 10

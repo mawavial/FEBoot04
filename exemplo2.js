@@ -1,8 +1,3 @@
-const contaBancaria2 = {
-  saldo: 1000,
-  depositar: (valor) => {
-      this.saldo += valor; // Isso dará erro!
-      console.log(`Novo saldo: ${this.saldo}`);
-  }
-};
-contaBancaria2.depositar(500);
+const numeros = [1, 2, 3];
+console.log(numeros.map(n => n * 2)); // [2, 4, 6]
+console.log(numeros.includes(2)); // true
