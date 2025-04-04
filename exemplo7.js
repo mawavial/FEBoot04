@@ -1,10 +1,9 @@
-function saudacao() {
-  console.log(`Olá, meu nome é ${this.nome}`);
+
+// O(n²) - Quadrático - ruim para coisa grande
+function compararTodos(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      console.log(arr[i], arr[j]);
+    }
+  }
 }
-
-const pessoa = { nome: "Diana" };
-
-// Criando uma nova função onde `this` sempre será `pessoa`
-const saudacaoDiana = saudacao.bind(pessoa);
-
-saudacaoDiana(); // Olá, meu nome é Diana

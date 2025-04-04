@@ -1,5 +1,5 @@
-Array.prototype.first = function() {
-  return this[0];
-};
+digaTchau(); // TypeError: digaTchau is not a function
 
-console.log([10, 20, 30].first()); // 10
+var digaTchau = function () {
+  console.log("Tchau teletubieee!");
+};

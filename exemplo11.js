@@ -1,4 +1,5 @@
-const obj = Object.create(null);
-console.log(obj.toString); // undefined
-
-console.log(Object.prototype.hasOwnProperty.call(obj, "chave")); // false
+//O(2ⁿ) - Exponencial - horrivel
+function fib(n) {
+  if (n <= 1) return n;
+  return fib(n - 1) + fib(n - 2);
+}

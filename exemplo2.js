@@ -1,3 +1,9 @@
-const numeros = [1, 2, 3];
-console.log(numeros.map(n => n * 2)); // [2, 4, 6]
-console.log(numeros.includes(2)); // true
+digaOi(); // Funciona!
+
+function digaOi() {
+  console.log("Oi!");
+  console.log(a); // undefined (não erro!)
+}
+
+
+var  a = 32
