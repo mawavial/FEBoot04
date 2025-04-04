@@ -1,2 +1,3 @@
+//temporal dead zone
 console.log(b); // ReferenceError: Cannot access 'b' before initialization
-let b = 20;
+const b = 20;

@@ -11,15 +11,17 @@
 */
 
 
-
 function exemplo() {
-  console.log(x); // undefined
-  var x = 5;
+  // console.log(x); // undefined
+  let x = 5;
 
   if (true) {
+    //so assim da erro
     var x = 10;
     console.log(x); // 10
   }
 
   console.log(x); // 10 - var ignora escopo de bloco!
 }
+
+exemplo()
