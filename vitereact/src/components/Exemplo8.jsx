@@ -1,2 +1,1 @@
-const valorPesado = useMemo(() => calculaCoisaPesada(dado), [dado]);
-const minhaFuncao = useCallback(() => fazAlgo(), []);
+<button onClick={handleSubmit}>Enviar</button>

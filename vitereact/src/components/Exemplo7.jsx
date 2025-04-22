@@ -1,16 +1,13 @@
-import { useRef } from "react";
 
 export function Exemplo7() {
-  const inputRef = useRef();
-
-  const focar = () => {
-    inputRef.current.focus();
+  const handleSubmit = e => {
+    e.preventDefault(); // evita reload
+    // coletar dados do state
   };
-
   return (
-    <div>
-      <input ref={inputRef} />
-      <button onClick={focar}>Foca em mim</button>
-    </div>
+    <form onSubmit={handleSubmit}>
+      {/* campos */}
+      <button type="submit">Enviar</button>
+    </form>
   );
 }

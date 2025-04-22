@@ -1,6 +1,8 @@
-const themeContext = React.createContext("claro");
 
 function Exemplo6() {
-  const tema = React.useContext(themeContext);
-  return <button style={{ background: tema === "escuro" ? "#333" : "#fff" }}>Tema: {tema}</button>;
+  const nomeRef = useRef();
+  const handleSubmit = () => {
+    console.log(nomeRef.current.value);
+  };
+  return <input ref={nomeRef} type="text" />;
 }

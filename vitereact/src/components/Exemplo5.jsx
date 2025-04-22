@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
 
 export function Exemplo5() {
-  const [hora, setHora] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setHora(new Date());
-    }, 1000);
-
-    return () => clearInterval(timer); // 🧹 Limpeza
-  }, []);
-
-  return <h2>{hora.toLocaleTimeString()}</h2>;
+  const [nome, setNome] = useState("");
+  return (
+    <input
+      type="text"
+      value={nome}
+      onChange={e => setNome(e.target.value)}
+    />
+  );
 }
