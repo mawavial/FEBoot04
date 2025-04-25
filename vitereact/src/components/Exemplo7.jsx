@@ -7,7 +7,7 @@ export function Exemplo7() {
   return (
     <form onSubmit={handleSubmit}>
       {/* campos */}
-      <button type="submit">Enviar</button>
+      <button onClick={handleSubmit}>Enviar</button>
     </form>
   );
 }

@@ -1,6 +1,12 @@
 
 export function Exemplo4() {
-  {items.map(item => (
-    <li key={item.id}>{item.label}</li>
-  ))}
+
+  const items = ['sobe', 'desce', 'esquerda', 'direita', 'bonde do trigrao'];
+
+  return (<>{
+    items?.map(item => (
+      <li key={item}>{item}</li>
+      
+    ))
+  }</>);
 }
