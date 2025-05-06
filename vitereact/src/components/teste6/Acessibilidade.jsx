@@ -5,7 +5,7 @@ export function Acessibilidade() {
   return (
     <form>
       <label htmlFor="nome">Nome:</label>
-      <input id="nome" type="text" />
+      <input role="text" id="nome" type="text" />
       <button type="submit">Enviar</button>
     </form>
   );

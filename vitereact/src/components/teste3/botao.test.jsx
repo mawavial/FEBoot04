@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import { Botao } from './Botao';
 
 test('renderiza sem erros', () => {
-  render(<Botao texto="Clique aqui" />);
+  render(<Botao texto="Clique aqui" />)
 });
 
 test('renderiza texto passado por props', () => {

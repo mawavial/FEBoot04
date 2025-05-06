@@ -2,13 +2,13 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { Formulario } from './Formulario';
 
 
-// beforeAll(() => {
-//   global.alert = jest.fn(); // Mock window.alert
-// });
+beforeAll(() => {
+  global.alert = jest.fn(); // Mock window.alert
+});
 
-// afterAll(() => {
-//   jest.restoreAllMocks(); // Restore original implementation after tests
-// });
+afterAll(() => {
+  jest.restoreAllMocks(); // Restore original implementation after tests
+});
 
 test('mostra erro se nome for curto', () => {
   render(<Formulario />);

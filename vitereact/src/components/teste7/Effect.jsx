@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function Relogio() {
+export function Effect() {
   const [hora, setHora] = useState(new Date().toLocaleTimeString());
 
   useEffect(() => {
