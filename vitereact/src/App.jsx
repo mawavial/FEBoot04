@@ -1,13 +1,38 @@
-// 🧩 O que deve ser testado em um componente React?
-// Renderização: O componente mostra o que deveria?
-// Interação: O componente responde a cliques, entradas de texto, etc.?
-// Estado: O estado muda corretamente?
-// Props: As props influenciam corretamente o resultado?
-// Efeitos colaterais (useEffect): Dados são buscados ou manipulados corretamente?
-
+import React, { useState } from 'react';
+import ZustandComponent from './components/zustand/index';
+import ReduxComponent from './components/redux/main';
+import JotaiComponent from './components/jotai/index';
 
 function App() {
-  return null
+  const [activeLibrary, setActiveLibrary] = useState('zustand');
+
+  const renderActiveComponent = () => {
+    switch (activeLibrary) {
+      case 'zustand':
+        return <ZustandComponent />;
+      case 'redux':
+        return <ReduxComponent />;
+      case 'jotai':
+        return <JotaiComponent />;
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="App">
+      <h1>State Management Libraries</h1>
+      <div>
+        <button onClick={() => setActiveLibrary('zustand')}>Zustand</button>
+        <button onClick={() => setActiveLibrary('redux')}>Redux</button>
+        <button onClick={() => setActiveLibrary('jotai')}>Jotai</button>
+      </div>
+      <div>
+        <h2>{activeLibrary.charAt(0).toUpperCase() + activeLibrary.slice(1)}</h2>
+        {renderActiveComponent()}
+      </div>
+    </div>
+  );
 }
 
 export default App;
