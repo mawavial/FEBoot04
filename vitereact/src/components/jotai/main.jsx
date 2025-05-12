@@ -3,7 +3,7 @@ import { Contador } from './Component';
 
 const JotaiComponent = () => {
   return <>
-    <div>Componente Jotai funcionando!</div>;
+    <div>Componente Jotai funcionando!</div>
     {Contador()}
   </>;
 };

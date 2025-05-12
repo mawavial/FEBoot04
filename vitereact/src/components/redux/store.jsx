@@ -1,18 +1,11 @@
-import { configureStore, createSlice } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
+import contadorReducer from './reducers/counter';
+import postReducer from './reducers/post';
 
-const contadorSlice = createSlice({
-  name: 'contador',
-  initialState: 0,
-  reducers: {
-    incrementar: (state) => state + 1,
-    decrementar: (state) => state - 1,
-  },
-});
-
-export const { incrementar, decrementar } = contadorSlice.actions;
 
 export const store = configureStore({
   reducer: {
-    contador: contadorSlice.reducer,
+    contador: contadorReducer,
+    posts: postReducer,
   },
 });
