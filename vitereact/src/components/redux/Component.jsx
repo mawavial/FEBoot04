@@ -4,15 +4,15 @@ import { incrementar, decrementar } from './reducers/counter';
 import { fetchPosts } from './reducers/post';
 
 export function Contador() {
+  const dispatch = useDispatch();
   const contador = useSelector((state) => state.contador);
   const posts = useSelector((state) => state.posts.posts);
-  console.log(posts);
   const postStatus = useSelector((state) => state.posts.status);
-  const dispatch = useDispatch();
+  console.log(posts);
   
   useEffect(() => {
     dispatch(fetchPosts());
-  }, [dispatch]);
+  }, []);
 
   return (
     <div>

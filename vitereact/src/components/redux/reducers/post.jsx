@@ -9,6 +9,7 @@ export const fetchPosts = createAsyncThunk(
       const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10');
       return response.data;
     } catch (error) {
+      toast.error('Error fetching posts');
       return rejectWithValue(error.message);
     }
   }
@@ -36,3 +37,5 @@ const postsSlice = createSlice({
 });
 
 export default postsSlice.reducer;
+
+export const selectPosts = (state) => state.posts.posts;
