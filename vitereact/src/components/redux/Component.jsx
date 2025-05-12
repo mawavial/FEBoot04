@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { incrementar, decrementar } from './reducers/counter';
 import { fetchPosts } from './reducers/post';
@@ -8,7 +8,6 @@ export function Contador() {
   const contador = useSelector((state) => state.contador);
   const posts = useSelector((state) => state.posts.posts);
   const postStatus = useSelector((state) => state.posts.status);
-  console.log(posts);
   
   useEffect(() => {
     dispatch(fetchPosts());
