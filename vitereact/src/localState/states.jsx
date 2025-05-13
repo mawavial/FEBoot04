@@ -1,37 +1,38 @@
-import React, { useState, useReducer } from "react";
-
-
-
-function reducer(state, action) {
-  switch (action.type) {
-    case "SET_NOME":
-      return { ...state, nome: action.payload };
-    default:
-      return state;
-  }
-}
+import { useEffect, useState } from "react";
 
 export default function Namer() {
-  const initialState = {
-    nome: "Mateuzo",
-  };
-  const [nome, setNome] = useState(initialState.nome);
-  const [nameState, nameDispatcher] = useReducer(reducer, initialState);
 
-  setNome(handleSetNome(nome))
+  const [nome, setNome] = useState(localStorage.getItem('nome') || "");
 
-  
- 
+  useEffect(() => {
+    console.log("Nome atualizado:", nome);
+  }, [nome]);
+
+
+  const handleChangeLocalStorage = () => {
+    localStorage.setItem("nome", nome);
+    setNome(localStorage.getItem('nome'))
+  }
+
+  const handleRemoveFromLocalStorage = () => { 
+    localStorage.removeItem("nome");
+    setNome("");
+  }
+
+
   return (
     <div className="App">
-      <h1>Nome: {nameState.nome}</h1>
+      <h1>Nome: {nome}</h1>
       <input
         type="text"
         value={nome}
         onChange={(e) => setNome(e.target.value)}
       />
-      <button onClick={() => nameDispatcher({ type: "SET_NOME", payload: nome })}>
-        Set Nome
+      <button onClick={handleChangeLocalStorage}>
+        Salva no browser
+      </button>
+      <button onClick={handleRemoveFromLocalStorage}>
+        Remove do browser
       </button>
     </div>
   );
