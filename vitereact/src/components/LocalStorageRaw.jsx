@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+//Precisa de tratamento para SSR (não existe localStorage no servidor)
+
+
 export default function Namer() {
 
   const [nome, setNome] = useState(localStorage.getItem('nome') || "");
