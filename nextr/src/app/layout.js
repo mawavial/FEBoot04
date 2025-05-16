@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Esse aqui eh meu titulo",
+  title: "Turma do Pagode",
   description: "Gerado por mim mesmo",
 };
 
