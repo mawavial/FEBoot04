@@ -1,16 +1,30 @@
-interface Contact { 
-  id: number;
-  name: string;
-  birthdate: Date;
+let x:number = 124
+let y: Date
+let z: boolean 
+let b: string[]
+let s: any = ''
+
+b =  "Oi, senhor" as any
+
+interface Pessoa {
+    id:number
+    nome?: string
+    idade?: number
+    altura?: number
+    peso?: number
+    dataNascimento?: Date
+    profissao?: string
+    sexo?: string
+    getIdade?: () => number
 }
 
-const contacts: any = 12312
- [
-  { id: 1, name: "John Doe", birthdate: new Date("1990-01-01") },
-  { id: 2, name: "Jane Smith", birthdate: new Date("1985-05-15") },
-  { id: 3, name: "Alice Johnson", birthdate: new Date("1992-07-20") },
-  { id: 4, name: "Bob Brown", birthdate: new Date("1988-11-30") },
-]
+let pessoa: Pessoa = {
+    id: 1,
+    nome: 'Mateus',
+    idade: 24,
+    altura: 1.80,
+    peso: 80,
+    dataNascimento: new Date('1999-01-01'),
+    sexo: 'Masculino'
 
-
-console.log(contacts?.map( contact => contact.name))
+}

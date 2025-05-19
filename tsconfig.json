@@ -2,6 +2,10 @@
   "include": ["src/**/*"],
   "compilerOptions": {
     "target": "ES6",
-    "outDir": "dist"
+    "outDir": "dist",
+    "noEmit": false,
+    "allowJs": true,
+    "checkJs": false,
+    
   }
 }
