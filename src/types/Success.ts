@@ -1,0 +1,1 @@
+export type SUCCESS = string | number | boolean | object | null | undefined

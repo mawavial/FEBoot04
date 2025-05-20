@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exemplo 6 Boladão</title>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao Exemplo 6!</h1>
+    <p>Um site colorido 🐶 e pobre 😢 feito com TypeScript! </p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Interaja com o exemplo</h2>
+      <button id="acaoBtn">Clique aqui!</button>
+      <div id="resultado"></div>
+    </div>
+  </main>
+  <footer>
+    <p>Hecho en el Bootcamp 04 🚀</p>
+  </footer>
+  <script src="exemplo6.js"></script>
+</body>
+</html>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  padding: 2rem 3rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.22);
+}
+
+button {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #24c6dc 0%, #5433ff 100%);
+  transform: scale(1.05);
+}
+
+#resultado {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #185a9d;
+  min-height: 2rem;
+}
+
+footer {
+  background: #185a9d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  letter-spacing: 1px;
+}
+</style>

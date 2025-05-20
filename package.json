@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mawavial/FEBoot04#readme",
   "devDependencies": {
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
 }
