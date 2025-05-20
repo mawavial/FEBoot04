@@ -1,7 +1,9 @@
-export default interface Contato {
+export default interface Contato<T, S> {
     telefone?: string
     email?: string
     mandarMensagem(mensagem: string): void
     receberMensagem(id: number): string
-    ligar?<T>(src:T): T
+    ligar?<T,S>(src:T): S
+    modeloCelular: T
+    pager: S 
 }

@@ -20,9 +20,19 @@
   <footer>
     <p>Hecho en el Bootcamp 04 🚀</p>
   </footer>
-  <script src="exemplo6.js"></script>
 </body>
 </html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const acaoBtn = document.getElementById('acaoBtn');
+    const resultado = document.getElementById('resultado');
+
+    acaoBtn.addEventListener('click', () => {
+      resultado.textContent = 'Você clicou no botão! 🎉';
+    });
+  });
+</script>
 
 <style>
 body {

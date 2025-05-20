@@ -3,7 +3,7 @@ import Pessoa from "./interfaces/Pessoa";
 import { Idade } from "./types/Idade";
 
 
-const mateus: Pessoa = {
+export const mateus: Pessoa = {
   id: 1,
   nome: 'Mateus',
   idade: 35,

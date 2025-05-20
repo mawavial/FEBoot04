@@ -2,9 +2,6 @@
 import { clone3 } from "./exemplo3";
 import Contato from "./interfaces/Contato";
 
-
-
-
 const dandara: Contato = {
     telefone: '123456789',
     email: 'danda23@pluver.com.br',
