@@ -1,0 +1,18 @@
+/* Unidades de Medida 
+
+Absolutas: 
+px (pixels) 
+cm (centímetros) 
+mm (milímetros) 
+in (polegadas) 
+pt (points - 1/72 inch) 
+pc (picas - 1/6 inch) 
+
+Relativas: 
+em (em relação ao tamanho da fonte pai) 
+rem (em relação ao elemento raiz) 
+vw (1% da largura da viewport) 
+vh (1% da altura da viewport) 
+vmin, vmax  
+
+*/

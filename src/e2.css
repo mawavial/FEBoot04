@@ -1,0 +1,16 @@
+/* 
+    Precedência de Seletores 
+
+ - Universal (*) - Menor precedência, só ganha em herança. 
+ - Type (p, h1, div) 
+ - Class (.example) 
+ - ID (#example) - Maior precedência. 
+
+ */
+
+ h1, h2, h3, h4 { 
+  margin-left: 90px; 
+} 
+ 
+
+
