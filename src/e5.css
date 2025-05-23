@@ -2,6 +2,7 @@
   display: flex;
 }
 
+
 .container {
   display: flex;
   flex-direction: row;      /*  Padrão: da esquerda para direita */
@@ -22,18 +23,17 @@
 
 
 .container {
-  justify-content: flex-start;    /* à esquerda (padrão) */
-  justify-content: center;        /* centralizado */
-  justify-content: flex-end;      /* à direita */
-  justify-content: space-between; /* espaço entre os itens */
-  justify-content: space-around;  /* espaço ao redor dos itens */
-  justify-content: space-evenly;  /* espaço igual entre os itens */
+  align-items: stretch;       /* EH O PADRAO BERTOLDO estica os itens na altura  */
+  align-items: flex-start;    /* a cima */
+  align-items: flex-end;      /* à baixo */
+  align-items: center;       /* ao centro */
+  align-items: baseline;    /* alinha pela linha de texto do componente */  
 }
 
 
 .container {
-  flex-wrap: nowrap;     /* (padrão) tudo numa linha só */
-  flex-wrap: wrap;       /* permite que os itens "quebrem" para nova linha */
+  flex-wrap: nowrap;        /* (padrão) tudo numa linha só */
+  flex-wrap: wrap;          /* permite que os itens "quebrem" para nova linha */
   flex-wrap: wrap-reverse; /* quebra para cima */
 }
 
@@ -46,4 +46,5 @@
 
 .item {
   flex: grow shrink basis;
+  flex-basis: auto; /* largura padrão do item */
 }
