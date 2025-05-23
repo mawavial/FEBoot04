@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;      /*  Padrão: da esquerda para direita */
+  flex-direction: row-reverse; /*  Da direita para esquerda */
+  flex-direction: column;   /*  De cima para baixo */
+  flex-direction: column-reverse; /*  De baixo para cima */
+}
+
+
+.container {
+  justify-content: flex-start;    /* à esquerda (padrão) */
+  justify-content: center;        /* centralizado */
+  justify-content: flex-end;      /* à direita */
+  justify-content: space-between; /* espaço entre os itens */
+  justify-content: space-around;  /* espaço ao redor dos itens */
+  justify-content: space-evenly;  /* espaço igual entre os itens */
+}
+
+
+.container {
+  justify-content: flex-start;    /* à esquerda (padrão) */
+  justify-content: center;        /* centralizado */
+  justify-content: flex-end;      /* à direita */
+  justify-content: space-between; /* espaço entre os itens */
+  justify-content: space-around;  /* espaço ao redor dos itens */
+  justify-content: space-evenly;  /* espaço igual entre os itens */
+}
+
+
+.container {
+  flex-wrap: nowrap;     /* (padrão) tudo numa linha só */
+  flex-wrap: wrap;       /* permite que os itens "quebrem" para nova linha */
+  flex-wrap: wrap-reverse; /* quebra para cima */
+}
+
+
+.item {
+  flex: 1;    /* ocupa o mesmo espaço que os outros com flex: 1 */
+  flex: 2;    /* ocupa o dobro do espaço de um item com flex: 1 */
+}
+
+
+.item {
+  flex: grow shrink basis;
+}

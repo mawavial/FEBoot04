@@ -1,13 +1,32 @@
+/*
+🧱 Diferença entre inline e block
+
+Característica                     display: block      display: inline
+
+Ocupa toda a largura disponível     ✅ Sim              ❌ Não
+Quebra de linha automaticamente     ✅ Sim              ❌ Não
+Pode ter width e height             ✅ Sim              ❌ Ignorado
+Pode ter margin e padding vertical  ✅ Sim              ⚠️ Limitado
+Exemplos de elementos padrão        <div>                  <span>
+                                    <p>                     <a>
+                                    <section>             <strong>
+                                    
+*/
+
+
 div { 
   background: red; 
   height: 50px; 
   width: 300px; 
   display: inline; 
+  border:  1px solid black;
 } 
  
 span { 
   background: lightblue; 
+  color:chocolate;
   height: 50px; 
   width: 300px; 
   display: block; 
+  border:  1px solid black;
 } 
