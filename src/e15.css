@@ -1,7 +1,8 @@
 /* 
 Media Query:
 
-- Media queries permitem aplicar estilos CSS diferentes dependendo das características do dispositivo, como largura da tela, orientação, resolução, etc.
+- Media queries permitem aplicar estilos CSS diferentes dependendo
+ das características do dispositivo, como largura da tela, orientação, resolução, etc.
 - São essenciais para criar layouts responsivos, que se adaptam a celulares, tablets e computadores.
 
 Sintaxe básica:
@@ -12,7 +13,7 @@ Sintaxe básica:
 */
 
 /* Estilo padrão (para telas grandes) */
-.caixa {
+.caixinha {
   width: 400px;
   background: #2ecc40;
   color: white;
@@ -22,7 +23,7 @@ Sintaxe básica:
 
 /* Para telas com largura máxima de 600px (ex: celular) */
 @media (max-width: 600px) {
-  .caixa {
+  .caixinha {
     width: 90%;
     background: #0074d9;
     font-size: 1.2rem;

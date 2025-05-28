@@ -1,19 +1,6 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw
-} 
 
 /* 
+
 Nem toda propriedade pode ser animada com @keyframes e animation.
 Aqui vão algumas propriedades que funcionam bem com animation:
 
@@ -35,8 +22,10 @@ Propriedades que NÃO são animáveis com animation (ou não funcionam como espe
 - float
 - visibility
 
-Use @keyframes e animation para criar animações complexas, com múltiplos estados e movimentos contínuos ou repetidos.
+Use @keyframes e animation para criar animações complexas, 
+com múltiplos estados e movimentos contínuos ou repetidos.
 Para transições simples entre dois estados, prefira transition.
+
 */
 
 .caixinha {

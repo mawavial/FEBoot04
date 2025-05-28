@@ -78,20 +78,24 @@ body {
     gap: 16px;
     padding: 16px;
   }
+
   .sidebar,
   .extra {
     display: none;
   }
+
   .main-content {
     grid-column: 1;
     grid-row: 1;
     grid-template-columns: 1fr;
     gap: 12px;
   }
+
   .card {
     font-size: 1rem;
     padding: 20px 10px;
   }
+
   .mobile-action {
     display: block;
     position: fixed;
