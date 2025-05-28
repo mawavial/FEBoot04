@@ -1,0 +1,81 @@
+/*
+At-rules CSS 
+
+No CSS, at-rules são comandos especiais que começam com @. Elas controlam como o CSS é processado, 
+aplicam condições, importam arquivos, definem animações, fontes e muito mais.
+
+Principais at-rules:
+
+@import
+  - Importa outro arquivo CSS.
+  - Exemplo: @import url('estilos.css');
+
+@media
+  - Aplica estilos apenas se certas condições forem verdadeiras (ex: largura de tela, orientação).
+  - Exemplo: @media (max-width: 600px) { ... }
+
+@font-face
+  - Define uma fonte personalizada para uso no site.
+  - Exemplo:
+    @font-face {
+      font-family: 'MinhaFonte';
+      src: url('minhafonte.woff2') format('woff2');
+    }
+
+@keyframes
+  - Define etapas de uma animação CSS.
+  - Ja vimos mas eu posso quantas regras eu conseguir criar xP
+  - Exemplo:
+    @keyframes animar {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+@supports
+  - Aplica CSS apenas se o navegador suportar uma propriedade ou valor.
+  - Exemplo:
+    @supports (display: grid) {
+      .container { display: grid; }
+    }
+
+@namespace
+  - Define um namespace para seletores XML/SVG.
+  - Exemplo: @namespace svg url(http://www.w3.org/2000/svg);
+
+@page
+  - Estiliza páginas impressas (usado em impressão).
+  - Exemplo:
+    @page {
+      margin: 2cm;
+    }
+
+@counter-style
+  - Define estilos personalizados para listas numeradas.
+  - Exemplo:
+    @counter-style meus-numeros {
+      system: numeric;
+      symbols: "*" "#";
+      suffix: " ";
+    }
+
+@layer
+  - Define camadas de CSS para controlar a ordem de aplicação dos estilos (CSS Cascade Layers).
+  - Exemplo:
+    @layer componentes {
+      button { color: blue; }
+    }
+
+@document (obsoleto)
+  - Aplicava CSS baseado na URL do documento. Não é mais recomendado.
+
+@charset
+  - Define a codificação do arquivo CSS (deve ser a primeira linha).
+  - Exemplo: @charset "UTF-8";
+
+@viewport (obsoleto)
+  - Definia configurações de viewport para dispositivos móveis. Não é mais usado.
+
+Resumo:
+- At-rules tornam o CSS mais poderoso, permitindo condições, importação, animações, fontes, camadas e mais.
+- As mais usadas no dia a dia são: @import, @media, @font-face, @keyframes, @supports e @layer.
+*/

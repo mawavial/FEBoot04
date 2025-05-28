@@ -1,0 +1,67 @@
+/* 
+Como usar animation e @keyframes no CSS
+
+- A propriedade 'animation' permite animar propriedades CSS de um elemento ao longo do tempo.
+- Para usar animation, você precisa definir um conjunto de etapas chamado '@keyframes'.
+- Os keyframes são "quadros-chave" que determinam os valores das propriedades em diferentes momentos da animação.
+
+Exemplo básico:
+
+*/
+
+@keyframes nome-da-animacao {
+  0%   { /* estado inicial */ }
+  50%  { /* estado intermediário */ }
+  100% { /* estado final */ }
+}
+
+
+.elemento {
+  animation: nome-da-animacao 2s ease-in-out infinite;
+}
+
+/*
+Principais propriedades de animation:
+- animation-name: nome do @keyframes
+- animation-duration: duração da animação (ex: 2s)
+- animation-timing-function: ritmo da animação (ex: linear, ease, cubic-bezier)
+- animation-delay: atraso antes de começar
+- animation-iteration-count: quantas vezes repete (ex: infinite)
+- animation-direction: direção (normal, reverse, alternate)
+- animation-fill-mode: define o estado do elemento antes/depois da animação
+
+Exemplo prático:
+*/
+
+.caixinha {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background: #2ecc40;
+  border-radius: 20px;
+  position: relative;
+  /* Aplica a animação chamada 'exemplo' */
+  animation: exemplo 2s ease-in-out infinite alternate;
+  box-shadow: 0 0 40px 10px rgba(149, 242, 160, 0.3);
+  transition: box-shadow 0.3s;
+}
+
+/* 
+@keyframes define os estados da animação.
+Aqui, a caixa muda de posição e cor ao longo do tempo.
+*/
+
+@keyframes exemplo {
+  0% {
+    transform: translateY(0);
+    background: #2ecc40;
+  }
+  50% {
+    transform: translateY(-120px) scale(1.2) rotate(-10deg);
+    background: #ffdc00;
+  }
+  100% {
+    transform: translateY(0);
+    background: #0074d9;
+  }
+}

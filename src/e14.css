@@ -1,0 +1,26 @@
+/* Pseudo-elementos CSS — explicação para alunos: */
+
+/* ::before              Adiciona conteúdo antes do conteúdo real do elemento */
+/*::after                Adiciona conteúdo depois do conteúdo real do elemento */
+/*::first-letter         Estiliza a primeira letra de um bloco de texto */
+/*::first-line           Estiliza a primeira linha de um bloco de texto */
+/*::selection            Estiliza o texto selecionado pelo usuário */
+/*::placeholder          Estiliza o texto de placeholder em campos de formulário */
+/*::marker               Estiliza o marcador de listas (<li>) */
+/*::backdrop             Estiliza o fundo de elementos modais (ex: <dialog>) */
+/*::file-selector-button Estiliza o botão de seleção de arquivo em <input type="file"> */
+/*::cue                  Estiliza legendas em vídeos (ex: <track>) */
+/*::part()               Permite estilizar partes internas de Web Components que usam 'part' */
+/*::slotted()            Estiliza elementos passados para slots em Web Components */
+/*::spelling-error       Destaca erros de ortografia (suporte limitado) */
+/*::grammar-error        Destaca erros de gramática (suporte limitado) */
+
+
+.caixa::before {
+  content: "Antes";
+  color: red;
+}
+.caixa::after {
+  content: "Depois";
+  color: blue;
+}

@@ -13,6 +13,32 @@ body {
   width: 100vw
 } 
 
+/* 
+Nem toda propriedade pode ser animada com @keyframes e animation.
+Aqui vão algumas propriedades que funcionam bem com animation:
+
+- opacity
+- background-color
+- color
+- width / height
+- margin / padding
+- transform (translate, scale, rotate, skew)
+- box-shadow
+- border, border-radius
+- filter
+
+Propriedades que NÃO são animáveis com animation (ou não funcionam como esperado):
+
+- display
+- position
+- z-index
+- float
+- visibility
+
+Use @keyframes e animation para criar animações complexas, com múltiplos estados e movimentos contínuos ou repetidos.
+Para transições simples entre dois estados, prefira transition.
+*/
+
 .caixinha {
   margin: 20px;
   width: 100px;
