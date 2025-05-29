@@ -15,7 +15,7 @@ Esse mini projeto deve ter duas paginas. Uma pagina inicial com uma mensagem de 
 
 Essa pagina devera ter tambem um botao, em a cada clique ela deverá mostrar mais 1 card com mais um usuario e cada vez que o usuário clicar no botão um novo card devera aparecer logo abaixo.
 
-Você deverá adicionar a segunda pagina uma chamada que mostre diretamente 10 usuarios, ou seja 10 cards.
+Você deverá adicionar a segunda pagina uma chamada que mostre diretamente 20 usuarios, ou seja 20 cards.
 
 ---
 
@@ -83,11 +83,17 @@ Você deverá adicionar a segunda pagina uma chamada que mostre diretamente 10 u
   npm jest ./
   ```
 
+  - **Criar um tsconfig com CLI:**
+  ```sh
+  npx tsc --init
+  ```
+
 ---
 
 ## ✔️ Checklist
 
 - [ ] Estrutura de pastas criada
+- [ ] Criação do .tsconfig
 - [ ] Interface `User` implementada
 - [ ] Função `fetchUsers` criada e testada
 - [ ] Cards com animação de entrada e transição no hover
