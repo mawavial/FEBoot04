@@ -1,0 +1,21 @@
+@use '../styles/variables' as *;
+
+.dashboard {
+  .actions {
+    margin-bottom: $spacing-md;
+  }
+  form {
+    margin-bottom: $spacing-lg;
+    background: $secondary;
+    padding: $spacing-md;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: $spacing-xs;
+    }
+  }
+} 

@@ -1,0 +1,26 @@
+@use '../styles/variables' as *;
+
+.home {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: $spacing-sm;
+      a {
+        color: $primary;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      span {
+        color: #888;
+        font-size: 0.9em;
+      }
+    }
+  }
+  .actions {
+    margin-bottom: $spacing-md;
+  }
+} 
