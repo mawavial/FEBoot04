@@ -3,6 +3,7 @@ import { useBlog } from '../contexts/BlogContext';
 import { useAuth } from '../contexts/AuthContext';
 import { Link } from 'react-router-dom';
 import './DashboardPage.module.scss';
+import { logAction } from '../utils/decorators';
 
 const DashboardPage: React.FC = () => {
   const { posts, addPost } = useBlog();
@@ -10,6 +11,7 @@ const DashboardPage: React.FC = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   
+  @logAction('Criar novo post')
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (user && title.trim() && content.trim()) {
