@@ -2,6 +2,7 @@
 @use './layout' as *;
 @use 'sass:color';
 
+
 // Estilos globais e resets
 * {
   box-sizing: border-box;
@@ -43,7 +44,7 @@ input, textarea {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #f5f6fa;
+  background: $background;
   color: #222;
   font-family: 'Segoe UI', Arial, sans-serif;
 

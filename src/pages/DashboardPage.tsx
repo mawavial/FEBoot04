@@ -9,7 +9,7 @@ const DashboardPage: React.FC = () => {
   const { user, logout } = useAuth();
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-
+  
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (user && title.trim() && content.trim()) {

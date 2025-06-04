@@ -4,4 +4,4 @@ export function logAction<T extends (...args: any[]) => any>(action: string, fn:
     console.log(`[LOG] Ação: ${action}`, { argumentos: args, data: new Date() });
     return fn(...args);
   }) as T;
-} 
+}
