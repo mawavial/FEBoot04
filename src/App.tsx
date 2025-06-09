@@ -1,12 +1,15 @@
-import React, { JSX } from 'react';
+import React, { JSX, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { BlogProvider } from './contexts/BlogContext';
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import PostPage from './pages/PostPage';
-import DashboardPage from './pages/DashboardPage';
 import './styles/App.scss';
+
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const LoginPage = lazy(() => import('./pages/LoginPage'));
+const PostPage = lazy(() => import('./pages/PostPage'));
+const DashboardPage = lazy(() => import('./pages/DashboardPage'));
+
 
 function PrivateRoute({ children }: { children: JSX.Element }) {
   const { user } = useAuth();

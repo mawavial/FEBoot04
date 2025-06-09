@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.module.scss';
+import { logAction } from '../utils/decorators';
 
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');

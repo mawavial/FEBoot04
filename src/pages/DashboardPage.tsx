@@ -11,8 +11,8 @@ const DashboardPage: React.FC = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   
-  @logAction('Criar novo post')
   function handleSubmit(e: React.FormEvent) {
+    console.log('Criar novo post');
     e.preventDefault();
     if (user && title.trim() && content.trim()) {
       addPost(title, content, user);
